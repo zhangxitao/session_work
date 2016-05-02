@@ -12,7 +12,7 @@ var fs = require('fs');
 var MyFileStore = require('./MyFileStore')(session);
 
 var app = express();
-var sessionPath="/home/xitao/webssproject/session_work";
+var sessionPath="/home/xitao/webssproject/session_work/sessinos";
 app.use(session({
     store: new MyFileStore({path:sessionPath}),
     secret: 'keyboard cat',
